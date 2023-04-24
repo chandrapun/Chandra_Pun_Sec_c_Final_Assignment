@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>login and sign in</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+         <div class="banner">
+    
+            <div class="navbar">
+                <img src="LOGO.png" alt="logo" >
+                <ul>
+                  <li><a href="index.html" >Home</a></li>
+                  <li><a href="page2(Features).html" >Features</a></li>
+                  <li>
+                    <a href="Page3(Attract).html" >attraction</a>
+                    <ul class="dropdown">
+                      <li><a href="Page6(gallery).html">Gallery</a></li>
+                    </ul>
+                    
+                  </li>
+                  <li>
+                    <a href="page4(contact).html">Contact</a>
+                    <ul class="dropdown">
+                      <li><a href="page7(about us).html" >About us</a></li>
+                    </ul>
+                    
+                  </li>
+                  
+                  <li><button class="btn" type="button"><a href="page5(login).html" ><span></span>LOG IN/SIGN IN</a></button>
+                </ul>
+            </div>
+            <br>
+            <div class="content">
+                <div class="cols">
+                    <h1>LIST <BR>ANYTHING<BR> ON THIS WEBSITES </h1>
+                    <p>
+                        Registration is free and as well as can take 15 minutes to complete-so lets do it
+                    </p>
+                </div>
+                <div class="cols">
+                 <div class="form-box">
+                    <div class="button-box">
+                       <div id="btn"></div>
+                       <button type="button" class="toggle-btn" onclick="login()">log in </button>
+                       <button type="button" class="toggle-btn" onclick="signin()">Sign in </button>
+                    </div>
+                    <div class="social-icons">
+                     <a href="reddit.com"><img src="icon1.png" alt="icon1"></a>
+                     <a href="facebook.com"><img src="icon2.png" alt="icon2"></a>
+                     <a href="twitter.com"><img src="icon3.png" alt="icon3"></a>
+                    </div>
+                    <form id="login" class="input-group">
+                     <input type="text" class="input-field" placeholder="user id" required>
+                     <input type="text" class="input-field" placeholder="Enter your password" required>
+                     <input type="checkbox" class="check-box"><span>Remember password</span>
+                     <button type="submit" class="submit-button" > Log in</button>
+                    </form>
+                    <form id="signin" class="input-group">
+                     <input type="text" class="input-field" placeholder="user id" required>
+                     <input type="email" class="input-field" placeholder="Email id" required>
+                     <input type="checkbox" class="check-box"><span>i agree to terms and condition
+                     </span>
+                     <button type="submit" class="submit-button" > register</button>
+                     </form>
+                </div>
+             </div>
+            </div>
+           
+             <script>
+             var x =document.getElementById("login")
+             var y =document.getElementById("signin")
+             var z =document.getElementById("btn")
+
+             function signin(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+             }
+             function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+             }
+            
+
+
+        </script>
+    <footer class="sticky-footer">
+      <!-- <h2>Footer Stick to the Bottom</h2> -->
+      <ul>
+                        <li><a href="index.html" >Home</a></li>
+              <li><a href="page2(Features).html" >Services</a></li>
+              <li><a href="Page3(Attract).html" >Attraction</a></li>
+              <li><a href="Page6(gallery).html">Gallery</a></li>
+              <li><a href="page4(contact).html" >Contact</a></li>
+      </ul>
+      <p> © Copyright Smashtheshell 2020.</p>
+  </footer>    
+    </body>
+</html>
