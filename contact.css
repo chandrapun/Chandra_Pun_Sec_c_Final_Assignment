@@ -1,0 +1,221 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 25vh;
+    
+}
+span{
+    color: rgb(160, 4, 4);
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li .btn{
+    cursor: pointer;
+    color: #e8eeed;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    border: 2px solid #f0f1f1;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 8px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #f3ebeb;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e8eeed;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover:after{
+    width: 100%;
+}
+.navbar ul li button{
+    width: 200px;
+    padding:15px 0 25;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+ul li ul .dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background:transparent;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+body{
+    background-image: url(background.jpg);
+    font-size: 14px;
+    background-size: 100%;
+    background-position: center;
+}
+.content{
+    width: 80%;
+    margin: 50px auto;
+    
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding:40px;
+    background: #180041;
+}
+h1{
+   margin-bottom: 10px; 
+
+}
+.content p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width :100%;
+    border: 1px solid #ccc;
+    outline:none;
+    padding:10px;
+    box-sizing:border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{
+    background: #180041;
+    width: 100px;
+    border:none;
+    outline: none;
+    color: #fff;
+    height:35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0,181, 0.3);
+}
+.contact-left h3 {
+    color: #ccc;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+footer p{
+    padding:0;
+    font-size: 0.8em;
+    color: hsla(0, 50%, 100%, 0.35);
+    margin: 1em 0;
+    font-size: 1rem;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    margin: 1em 0; 
+}
+footer ul li a{
+    padding: 1em; 
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.904);
+    transition: 100ms;
+}
+footer ul li a:hover{
+    color: var(--primary);
+}
+
+footer{
+    width: 100%;
+    background: #180041;
+    color: #fff; 
+    display: grid;
+    place-items: center;
+    padding: 2em; 
+    font-size: 1.2rem;
+}
+
+
+
+/* Sticky Footer Styling */
+body{
+    min-height: 100vh;
+}
+.sticky-footer{
+    position: sticky;
+    top: 100%;
+}
+
+
