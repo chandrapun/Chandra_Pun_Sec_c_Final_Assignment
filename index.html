@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="LOGO.png" alt="logo">
+            <ul>
+              <li><a href="index.html"><font color="Yellow">Home</font></a></li>
+              <li><a href="page2(Features).html" >Features</a></li>
+              <li>
+                <a href="Page3(Attract).html">attraction</a>
+                <ul class="dropdown">
+                  <li><a href="Page6(gallery).html">Gallery</a></li>
+                </ul>
+                
+              </li>
+              <li>
+                <a href="page4(contact).html">Contact</a>
+                <ul class="dropdown">
+                  <li><a href="page7(about us).html">About us</a></li>
+                </ul>
+                
+              </li>
+              
+              <li><button class="btn" type="button"><a href="page5(login).html"><span></span>LOG IN/SIGN IN</a></button>
+            </ul>
+        
+     </div>
+     
+    
+     <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="01.jpg" alt="1">
+            </div>
+            <div class="swiper-slide">
+                <img src="02.jpg" alt="2">
+            </div>
+            <div class="swiper-slide">
+                <img src="03.jpg" alt="3">
+            </div>
+            <div class="swiper-slide">
+                <img src="04.jpg" alt="4">
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="cols">
+        <h1>HOTEL STAY</h1>
+        <p>Welcome to hotel stay websites where you can see many feature</p>
+        <button type="submit"><a href="page7(about us).html" ><span></span><font color="white">Explore</font></button></a>
+        </div>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            navigation:{
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            effect: "coverflow"
+        });
+    </script>
+    <footer class="sticky-footer">
+          <!-- <h2>Footer Stick to the Bottom</h2> -->
+          <ul>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="page2(Features).html" >Services</a></li>
+              <li><a href="Page3(Attract).html" >Attraction</a></li>
+              <li><a href="Page6(gallery).html" >Gallery</a></li>
+              <li><a href="page4(contact).html">Contact</a></li>
+          </ul>
+          <p> © Copyright Smashtheshell 2023.</p>
+      </footer>
+  
+</body>
+</html>
+
